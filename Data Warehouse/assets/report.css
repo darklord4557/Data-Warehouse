@@ -1,0 +1,94 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font;
+    src: url(font.otf);
+}
+body
+{
+    background-image: url(Images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.side
+{
+    width: auto;
+    height: 90vh;
+    position: fixed;
+    top:30px;
+    left: 10px;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.2px);
+    border-radius: 15px; 
+    box-shadow: 0 15px 30px;
+}
+.logo
+{
+    align-items: center;
+    font-family: font;
+    letter-spacing: 4px;
+}
+.logo a img
+{
+    height: 150px;
+    width: auto;  
+    padding-left: 50px;  
+}
+.side ul
+{
+    list-style: none;
+    cursor: pointer;
+    padding-top: 20px;
+}
+.side ul li p
+{
+    font-size: 20px;
+    padding:15px;
+    color: black;
+} 
+.side ul li p:hover
+{
+    color: #1db945;
+    transition: 0.5s;
+}
+/*sidebar finished*/
+.content
+{
+    padding-top: 50px;
+    margin-left:55vh;
+    padding-bottom: 20px;
+}
+.content
+{
+    align-items: center;
+    height: 20%;
+    width: auto;
+    min-height: 50vh;
+    color: red;
+    font-family: font;
+}
+.container
+{
+    width: min-content;
+    display: flex;  
+    margin-top: 10px;
+}
+.chart
+{
+    padding: 2rem;
+    border: 1px solid orange;
+    border-radius: 1rem;
+    background: #251c35;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+#barChart
+{
+    padding: 0px;
+    height: auto;
+    width: auto;
+}

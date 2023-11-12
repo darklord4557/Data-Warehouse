@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Das And Co</title>
+        <link rel="stylesheet" href="assets/cus.css">
+        <link rel="shortcut icon" href="assets/Images/logo.png">
+    </head>
+    <body>
+        <div class="side">
+            <div class="logo">
+                <a href="index.html"><img src="assets/Images/logo.png" alt="logo"></a>
+                <h2>DAS INDUSTRY</h2>
+            </div>
+            <ul>
+                <li onclick="location.href='index.html'"><p>Dashboard</p></li>
+                <li onclick="location.href='supply.html'"><p>Supplier Managment</p></li>
+                <li onclick="location.href='customer.html'"><p>Customer Managment</p></li>
+                <li onclick="location.href='goods.html'"><p>Goods And Stocks</p></li>
+                <li onclick="location.href='order.html'"><p>Order Managment</p></li>
+                <li onclick="location.href='report.html'"><p>Report</p></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Our Suppliers</h2>
+            <button onclick="add()">New</button>
+            <div class="table">
+                <div class="head">
+                    <div class="cell">
+                        <p>ID</p>
+                    </div>
+                    <div class="cell">
+                        <p>Name</p>
+                    </div>
+                    <div class="cell">
+                        <p>Email ID</p>
+                    </div>
+                    <div class="cell">
+                        <p>Phone No</p>
+                    </div>
+                    <div class="cell last">
+                        <p>Action</p>
+                    </div>
+                    </div>
+                    <div class="trow ">
+                        <div class="cell">
+                            <p>1</p>
+                        </div>
+                        <div class="cell">
+                            <p>a</p>
+                        </div>
+                        <div class="cell">
+                            <p>a@mail.com</p>
+                        </div>
+                        <div class="cell">
+                            <p>1111</p>
+                        </div>
+                        <div class="cell last">
+                            <button onclick="update()">&#9998;</button>
+                            <button onclick="del(this)">&#128465;</button>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+        <div class="pop" id="pop">
+                <div id="aform">
+                    <h2>Add Supplier</h2>
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email ID" required>
+                        <input type="tel" placeholder="Phone No" required>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+        </div>
+        <div class="pop" id="pop1">
+                <div id="uform">
+                    <form>
+                        <h2>Update Supplier</h2>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email ID" required>
+                        <input type="tel" placeholder="Phone No" required>
+                        <button type="submit">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script>
+        let p=document.getElementById("pop");
+        let j=document.getElementById("pop1");
+        function add(){
+            if (p.style.display=="none"){
+                p.style.display="block";
+            }else{
+                p.style.display="none";
+            }
+        }
+        function update(){
+            if (j.style.display=="none"){
+                j.style.display="block";
+            }else{
+                j.style.display="none";
+            }
+        }
+        function del(btn){
+            var r=btn.parentNode.parentNode;
+            r.parentNode.removeChild(r);
+        }
+    </script>
+    </body>
+</html>

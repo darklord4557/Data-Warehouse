@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Das And Co</title>
+        <link rel="stylesheet" href="assets/report.css">
+        <link rel="shortcut icon" href="assets/Images/logo.png">
+    </head>
+    <body>
+        <div class="side">
+        <div class="logo">
+        <a href="index.html"><img src="assets/Images/logo.png" alt="logo"></a>
+        <h2>DAS INDUSTRY</h2>
+        </div>
+            <ul>
+                <li onclick="location.href='index.html'"><p>Dashboard</p></li>
+                <li onclick="location.href='supply.html'"><p>Supplier Managment</p></li>
+                <li onclick="location.href='customer.html'"><p>Customer Managment</p></li>
+                <li onclick="location.href='goods.html'"><p>Goods And Stocks</p></li>
+                <li onclick="location.href='order.html'"><p>Order Managment</p></li>
+                <li onclick="location.href='report.html'"><p>Report</p></li>
+            </ul>
+        </div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Das And Co</title>
+        <link rel="stylesheet" href="assets/report.css">
+        <link rel="shortcut icon" href="assets/Images/logo.png">
+    </head>
+    <body>
+        <div class="side">
+            <div class="logo">
+                <a href="index.html"><img src="assets/Images/logo.png" alt="logo"></a>
+                <h2>DAS INDUSTRY</h2>
+            </div>
+            <ul>
+                <li onclick="location.href='index.html'"><p>Dashboard</p></li>
+                <li onclick="location.href='supply.html'"><p>Supplier Managment</p></li>
+                <li onclick="location.href='customer.html'"><p>Customer Managment</p></li>
+                <li onclick="location.href='goods.html'"><p>Goods And Stocks</p></li>
+                <li onclick="location.href='order.html'"><p>Order Managment</p></li>
+                <li onclick="location.href='report.html'"><p>Report</p></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>The Current Reports</h2>
+        <div class="container">
+            <div class="chart">
+                <canvas id="barChart" height="500" width="900"></canvas>
+            </div>
+        </div>
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const ctx = document.getElementById('barChart');
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6'],
+                datasets: [{
+                  label: 'Stocks Sold',
+                  data: [12, 19, 3, 5, 2, 3],
+                  borderWidth: 1,
+                  borderRadius:5,
+                  backgroundColor: [
+                    'red','blue','yellow','green','purple','orange'
+                  ]
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font;
+    src: url(font.otf);
+}
+body
+{
+    background-image: url(Images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.side
+{
+    width: auto;
+    height: 90vh;
+    position: fixed;
+    top:30px;
+    left: 10px;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    box-shadow: 0 20px 35px;
+}
+.logo
+{
+    align-items: center;
+    font-family: font;
+    letter-spacing: 4px;
+}
+.logo a img
+{
+    height: 150px;
+    width: auto;   
+    padding-left: 50px; 
+}
+.side ul
+{
+    list-style: none;
+    cursor: pointer;
+    padding-top: 20px;
+}
+.side ul li p
+{
+    font-size: 20px;
+    padding:15px;
+    color: black;
+} 
+.side ul li p:hover
+{
+    color: #1db945;
+    transition: 0.5s;
+}
+/*sidebar finished*/
+.content
+{
+    padding-top: 50px;
+    margin-left:55vh;
+    padding-bottom: 20px;
+}
+.content h2
+{
+    color: red;
+    padding-bottom: 20px;
+}
+button
+{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    font-weight: 550;
+    font-size: 15px;
+    background: #1db945;
+    color: black;
+    border-radius: 10px;
+}
+.content button:hover
+{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+.content .table
+{
+    margin-top: 20px;
+}
+.content .trow
+{
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    background: rgb(221, 220, 220);
+    padding: 12px 0;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 3px 5px 6px rgba(0, 0, 27, 0.3);
+    font-weight: 600;
+}
+.cell
+{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #000;
+    vertical-align: middle;
+}  
+.head 
+{
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    background: darkblue;
+    padding: 12px 0;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 3px 5px 6px rgba(0, 0, 27, 0.3);
+    font-weight: 600;
+} 
+.head .cell
+{
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.head .last
+{
+    border-right: none;
+}
+.last
+{
+    border-right: none;
+}
+.h
+{
+    background-color: #fff;
+}
+/*popup*/
+.pop
+{
+    position: absolute;
+    height: 50%;
+    display: none;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) ;
+    width: 380px;
+    padding: 20px 20px;
+    background: #fff;
+    box-shadow: 2px 3px 5px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.pop h2
+{
+    text-align: center;
+    color: royalblue;
+    margin: 10px 0px 20px;
+    font-family: 'Raleway',sans-serif;
+}
+.pop input
+{
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.pop button
+{
+    padding: 10px;
+    margin: 10% 0px 10px 5px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.pop button:hover
+{
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.last button
+{
+    background-color: red;
+    color: #000;
+    font-weight: 600;
+    width: 30%;
+}
